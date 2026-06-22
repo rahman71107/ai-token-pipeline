@@ -1,6 +1,6 @@
 """
 AI Token Processing Pipeline
-Author: [Your Name]
+Author: [Abdul Hameed]
 Description: Simulates an AI data intake engine by sanitizing raw text tokens,
              injecting layer configurations, and filtering anomalies usinglist mutations.
 """
