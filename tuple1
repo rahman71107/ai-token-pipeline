@@ -1,0 +1,11 @@
+raw_coordinates,shift_multiplier=(12.5,45.0,-8.2,91.4),1
+shift_multiplier<<=3
+threshold=shift_multiplier
+working_zone=tuple(raw_coordinates[1:3])
+mylist=list(working_zone)
+mylist[0]=50.0
+calibrated_zone=tuple(mylist)
+(lat,lon)=calibrated_zone
+if lat>threshold:
+                    print(f"[CALIBRATION SUCCESS] Latitude {lat} exceeds threshold {threshold}. Longitude is locked at {lon}")
+print("[STATUS] Pipeline execution finalized")
