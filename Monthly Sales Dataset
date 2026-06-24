@@ -1,0 +1,10 @@
+sales = [12000, 15000, 18000]
+(january, february, march)=sales
+total_sales=0
+print(f"January Sales: {january}")
+print(f"February Sales: {february}")
+print(f"March Sales: {march}")                                        
+for i in range(len(sales)):
+                    total_sales+=sales[i]
+average_sales=total_sales/(len(sales))
+print(f"Total Sales: {total_sales}",f"\nAverage_Sales: {average_sales}")
