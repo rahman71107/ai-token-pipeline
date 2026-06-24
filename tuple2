@@ -1,0 +1,9 @@
+initial_metrics,incoming_metrics,shift_key=(92, 85, 92), (78, 88), 4
+shift_key>>=2
+min_threshold=80*shift_key
+all_metrics=initial_metrics+incoming_metrics
+high_score_count=all_metrics.count(92)
+for i in range(len(all_metrics)):
+                    if all_metrics[i]>=min_threshold:
+                                        print(f"[BATCH PASS] Index {i}: Score {all_metrics[i]} meets target threshold")
+print(f"[STATUS]  Batch run evaluated. Target score appeared {high_score_count} times")
