@@ -1,0 +1,15 @@
+marks = [78, 85, 92, 67, 88]
+print("Dataset Name: Students Mark Dataset")
+print(f"total students: {len(marks)}")
+highest_mark=0
+lowest_mark=100
+for i in range(len(marks)-1):
+                    if marks[i]>=marks[i+1] and marks[i]>=highest_mark:
+                                        highest_mark=marks[i]
+                    elif marks[i+1]>=marks[i] and marks[i+1]>=highest_mark:
+                                        highest_mark=marks[i+1]
+                    if marks[i]<=marks[i+1] and marks[i]<=lowest_mark:
+                                        lowest_mark=marks[i]
+                    elif marks[i+1]<=marks[i]and marks[i+1]<=lowest_mark:
+                                        lowest_mark=marks[i+1]
+print(f"Highest Mark: {highest_mark}\nLowest Mark: {lowest_mark}")
